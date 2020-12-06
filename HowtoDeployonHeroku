@@ -1,0 +1,17 @@
+Step1: Create a new anaconda environment
+Step2: Install the requiremnts.txt
+Step3:Create a file name as Procfile
+	There is no extension for the Procfile
+	P should be capital
+
+	web: gunicorn app:app
+
+	app:app  filename:applicationname
+Step4: Initialise your project as a git project
+
+
+in Git BASH
+$git init
+$git add .
+$git status
+$git commit -m "initial commit"
