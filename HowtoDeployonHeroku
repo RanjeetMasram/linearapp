@@ -20,3 +20,36 @@ $git commit -m "initial commit"
 $ heroku create
 $ git remote -v
 $ git push heroku master
+
+
+GCP Steps
+
+Step 1: Go to GCP cloud create a new project
+Step 2: Create a new configuration File named as app.yaml and put the below content inside this file
+
+runtime: python
+env: flex
+entrypoint: gunicorn -b :$PORT main:application
+
+runtime_config:
+  pyhton_version: 3
+
+manual_scaling:
+  instances: 1
+
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
+
+Step 3: Initialise a local git
+	git init
+	git add .
+	git commit -m "any msg for commit"
+
+Step 4: Go to your github.com create a new repo any you can provide fir that repo
+
+Step 5: Push our code to our github repo
+	git push <github_repo_url> branch_name
+   e.g. git push <github_repo_url> main
+
