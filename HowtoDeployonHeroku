@@ -1,6 +1,7 @@
 Step1: Create a new anaconda environment
 Step2: Install the requiremnts.txt
-Step3:Create a file name as Procfile
+Step3:
+Create a file name as Procfile
 	There is no extension for the Procfile
 	P should be capital
 
@@ -15,3 +16,7 @@ $git init
 $git add .
 $git status
 $git commit -m "initial commit"
+
+$ heroku create
+$ git remote -v
+$ git push heroku master
